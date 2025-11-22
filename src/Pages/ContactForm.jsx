@@ -53,10 +53,10 @@ function ContactForm() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-400 via-cyan-500 to-blue-600 animate-gradient-xy py-8 px-4">
+    <div className="min-h-screen bg-linear-to-br from-emerald-400 via-cyan-500 to-blue-600 animate-linear-xy py-8 px-4">
       <div className="max-w-2xl mx-auto">
         <div className="bg-white/95 backdrop-blur-lg rounded-3xl shadow-2xl p-8 transform hover:scale-[1.02] transition-all duration-500 border border-white/20">
-          <h1 className="text-5xl font-black bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent mb-4 animate-bounce-in">
+          <h1 className="text-5xl font-black bg-linear-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent mb-4 animate-bounce-in">
             📞 Contact Us
           </h1>
           <p className="text-gray-600 text-lg mb-8 font-medium animate-fade-in">
@@ -121,8 +121,8 @@ function ContactForm() {
             {message && (
               <div className={`p-6 rounded-2xl font-bold text-lg transform animate-pulse ${
                 message.includes('✅') 
-                  ? 'bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 border-2 border-green-200' 
-                  : 'bg-gradient-to-r from-red-100 to-pink-100 text-red-700 border-2 border-red-200'
+                  ? 'bg-linear-to-r from-green-100 to-emerald-100 text-green-700 border-2 border-green-200' 
+                  : 'bg-linear-to-r from-red-100 to-pink-100 text-red-700 border-2 border-red-200'
               }`}>
                 {message}
               </div>
@@ -131,7 +131,7 @@ function ContactForm() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-black text-lg py-4 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl disabled:opacity-50 disabled:transform-none shadow-lg flex items-center justify-center space-x-3"
+              className="w-full bg-linear-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-black text-lg py-4 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl disabled:opacity-50 disabled:transform-none shadow-lg flex items-center justify-center space-x-3"
             >
               {loading ? (
                 <>
